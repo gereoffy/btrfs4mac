@@ -87,3 +87,23 @@ final class BtrfsFileSystem: FSUnaryFileSystem, FSUnaryFileSystemOperations {
         replyHandler(nil)
     }
 }
+
+// MARK: - Check without a loaded volume
+
+extension BtrfsFileSystem: FSManageableResourceMaintenanceOperations {
+    /// A read-only file system needs no repair; the actual read check runs on
+    /// the volume (BtrfsVolume) once the resource is loaded.
+    func startCheck(task: FSTask, options: FSTaskOptions) throws -> Progress {
+        let progress = Progress(totalUnitCount: 1)
+        DispatchQueue.global().async {
+            task.logMessage("btrfs: read-only file system, nothing to repair")
+            progress.completedUnitCount = 1
+            task.didComplete(error: nil)
+        }
+        return progress
+    }
+
+    func startFormat(task: FSTask, options: FSTaskOptions) throws -> Progress {
+        throw posixError(EROFS)
+    }
+}

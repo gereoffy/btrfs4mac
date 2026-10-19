@@ -24,6 +24,11 @@
 	<dict>
 		<key>EXExtensionPointIdentifier</key>
 		<string>com.apple.fskit.fsmodule</string>
+		<key>FSCheckOptionSyntax</key>
+		<dict>
+			<key>shortOptions</key>
+			<string>fnpqy</string>
+		</dict>
 		<key>FSActivateOptionSyntax</key>
 		<dict>
 			<key>shortOptions</key>

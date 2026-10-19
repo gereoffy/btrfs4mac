@@ -42,6 +42,8 @@ final class BtrfsVolume: FSVolume {
         super.init(volumeID: volumeID, volumeName: FSFileName(string: name))
     }
 
+    var rootInode: btrfsro_inode { root.inode }
+
     deinit {
         if let fs {
             btrfsro_unmount(fs)
@@ -482,5 +484,37 @@ extension BtrfsVolume: FSVolume.XattrOperations {
         } catch {
             replyHandler(nil, error)
         }
+    }
+}
+
+// MARK: - Check (called by DiskArbitration before mounting)
+
+extension BtrfsVolume: FSManageableResourceMaintenanceOperations {
+    /// There is nothing to repair on a read-only file system; verify that the
+    /// root directory can be read, so an unreadable file system is reported.
+    func startCheck(task: FSTask, options: FSTaskOptions) throws -> Progress {
+        let progress = Progress(totalUnitCount: 1)
+        DispatchQueue.global().async {
+            var result: Error?
+            var root = self.rootInode
+            var st = btrfsro_stat()
+            var ret = btrfsro_stat(self.fs, &root, &st)
+            if ret == 0 {
+                ret = btrfsro_readdir(self.fs, &root, 0, { _, _, _, _, _ in 1 }, nil)
+            }
+            if ret != 0 {
+                result = posixError(ret)
+                task.logMessage("btrfs: cannot read the root directory (error \(-ret))")
+            } else {
+                task.logMessage("btrfs: read-only file system, nothing to repair")
+            }
+            progress.completedUnitCount = 1
+            task.didComplete(error: result)
+        }
+        return progress
+    }
+
+    func startFormat(task: FSTask, options: FSTaskOptions) throws -> Progress {
+        throw posixError(EROFS)
     }
 }
