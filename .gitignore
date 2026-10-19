@@ -1,6 +1,7 @@
 # Build output
 build/
 fskit/dist/
+/dist/
 
 # Test images and their reference manifests (large, made locally or on Linux)
 teszt-*/

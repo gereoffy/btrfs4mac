@@ -52,6 +52,15 @@ if [ ! -f "$SRC/Contents/Extensions/BtrfsFS.appex/Contents/embedded.provisionpro
 	echo "warning: no provisioning profile, macOS will not run the module" \
 	     "unless AMFI is relaxed" >&2
 fi
+# A notarized app may lose the quarantine flag of the download; otherwise
+# it is launched from a read-only translocated copy.
+NOTARIZED=0
+if spctl -a -t exec "$SRC" 2>/dev/null; then
+	NOTARIZED=1
+	echo "Gatekeeper: accepted"
+else
+	echo "Gatekeeper: not accepted (not notarized), quarantine is kept"
+fi
 
 # Copies elsewhere with the same bundle ID (build products, downloads)
 # confuse the extension registry: only the installed one may stay registered.
@@ -65,6 +74,9 @@ done
 echo "== installing $DEST"
 rm -rf "$DEST"
 ditto "$SRC" "$DEST"
+if [ "$NOTARIZED" = 1 ]; then
+	xattr -dr com.apple.quarantine "$DEST" 2>/dev/null || true
+fi
 "$LSREGISTER" -f "$DEST"
 pluginkit -a "$DEST/Contents/Extensions/BtrfsFS.appex"
 
