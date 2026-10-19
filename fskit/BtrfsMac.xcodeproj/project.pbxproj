@@ -1,0 +1,886 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0171374F42F3B1C557DFA0AF = {
+			isa = PBXBuildFile;
+			fileRef = ECE7FFE71A78EC9C5CF467E3;
+		};
+		049ECA1A721814E61E338F67 = {
+			isa = PBXBuildFile;
+			fileRef = 5B9C55ADDE0288A1DE213192;
+		};
+		10F75608E0E0B3A5B49B7BAA = {
+			isa = PBXBuildFile;
+			fileRef = 4A0B9FEDDD24DDB002355F37;
+		};
+		17EBE1BB34F7FA690BD64802 = {
+			isa = PBXBuildFile;
+			fileRef = 501A520E08B0B229CB5B1807;
+		};
+		2960104993A9969A5DC57CD2 = {
+			isa = PBXBuildFile;
+			fileRef = 268D3151D04A0695471FF8B1;
+		};
+		2CAC04B98AD3CD55D3864CF4 = {
+			isa = PBXBuildFile;
+			fileRef = 689F6FECC3DCB2CABE265924;
+		};
+		2FB65DA69ECD46A4E2CA10BA = {
+			isa = PBXBuildFile;
+			fileRef = E320ADE7BEF1422E388CBF48;
+		};
+		341082EC4D65C31B7D18C9E5 = {
+			isa = PBXBuildFile;
+			fileRef = F022D12F520C5E970F3A59D9;
+		};
+		476C51F189E72505D3CA8B88 = {
+			isa = PBXBuildFile;
+			fileRef = 9B9BCFDE5962345E1108274D;
+		};
+		47DD755CE94FD70199694636 = {
+			isa = PBXBuildFile;
+			fileRef = FD60962B302E4BF3AD0B29A2;
+		};
+		4D37457595B1A55F6B725E1C = {
+			isa = PBXBuildFile;
+			fileRef = 55E12A2032BC9B82C0636F8E;
+		};
+		507B5827259EFE24538C4896 = {
+			isa = PBXBuildFile;
+			fileRef = 6B563F4F835BBDD7DEA0AD9C;
+		};
+		51270710634147170C4DFD1C = {
+			isa = PBXBuildFile;
+			fileRef = 3C428C99C1CB625DC3EA9037;
+		};
+		5788347EB65F71B79F88CE34 = {
+			isa = PBXBuildFile;
+			fileRef = BCD36FA0EF44CBDEA74DCB16;
+		};
+		57C48CDF129F4EA20D9CF8FB = {
+			isa = PBXBuildFile;
+			fileRef = 8D48369F79B137A719DE2D20;
+		};
+		63B9F678836888261D832B84 = {
+			isa = PBXBuildFile;
+			fileRef = 94C690A1DAA73F917974C85C;
+		};
+		6D65BE0F0240D1153FA97154 = {
+			isa = PBXBuildFile;
+			fileRef = BDC2C6E26B3A956CA3B81F07;
+		};
+		74FCE1BF762D47A880C946D0 = {
+			isa = PBXBuildFile;
+			fileRef = 9ECD6A4768902D1F6379EC23;
+		};
+		8055465C7022E8EECE19CB06 = {
+			isa = PBXBuildFile;
+			fileRef = C846A9D32869F590D9009ABE;
+			settings = {
+				ATTRIBUTES = (
+					RemoveHeadersOnCopy,
+				);
+			};
+		};
+		8A33481272AEEABB272F0433 = {
+			isa = PBXBuildFile;
+			fileRef = 67241190B9C88CD27AF548C7;
+		};
+		999421B759FFF3212CB7B263 = {
+			isa = PBXBuildFile;
+			fileRef = 05FEC09649C620C921D34B94;
+		};
+		BDB257FA0F537A3DF005F823 = {
+			isa = PBXBuildFile;
+			fileRef = AB99A374A802EA8CB541DD20;
+		};
+		C8797038B63201E7BF495B27 = {
+			isa = PBXBuildFile;
+			fileRef = 38A5085057140368DF166CE1;
+		};
+		D110D7F2286E8968829CC7EA = {
+			isa = PBXBuildFile;
+			fileRef = 1B64800641A9512FCBF14A47;
+		};
+		D4737510CAA550011A075E54 = {
+			isa = PBXBuildFile;
+			fileRef = FDDD063A15975F4E9E3CE3DE;
+		};
+		DDB42847CCA57B461C5ED7FB = {
+			isa = PBXBuildFile;
+			fileRef = 07479B1E1B4789C1BFDB20DC;
+		};
+		F9B22DDE068E05865796F6B1 = {
+			isa = PBXBuildFile;
+			fileRef = F85DDD127E91CDC449F6CC9A;
+		};
+		FB65AF3DD272295E14BF98E8 = {
+			isa = PBXBuildFile;
+			fileRef = 11392CE380CD22D524E507D5;
+		};
+		FD507F13B2012ADFCE5F5319 = {
+			isa = PBXBuildFile;
+			fileRef = 2937FC743ED63C3D5E28EB2A;
+		};
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DE1494D6B9BC63E3D72F64D = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595;
+			proxyType = 1;
+			remoteGlobalIDString = 5DC61D677659CB93EE502EBC;
+			remoteInfo = BtrfsFS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3769550BEC446D779F5C3557 = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				8055465C7022E8EECE19CB06,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05FEC09649C620C921D34B94 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = src/volumes.c;
+			sourceTree = "<group>";
+		};
+		07479B1E1B4789C1BFDB20DC = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = src/data.c;
+			sourceTree = "<group>";
+		};
+		11392CE380CD22D524E507D5 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = vendor/zstd/common/entropy_common.c;
+			sourceTree = "<group>";
+		};
+		1B64800641A9512FCBF14A47 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = BtrfsMacApp.swift;
+			sourceTree = "<group>";
+		};
+		268D3151D04A0695471FF8B1 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = src/hash.c;
+			sourceTree = "<group>";
+		};
+		2937FC743ED63C3D5E28EB2A = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = BtrfsFileSystem.swift;
+			sourceTree = "<group>";
+		};
+		38A5085057140368DF166CE1 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = vendor/zstd/decompress/huf_decompress.c;
+			sourceTree = "<group>";
+		};
+		3C428C99C1CB625DC3EA9037 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = vendor/zstd/decompress/zstd_decompress.c;
+			sourceTree = "<group>";
+		};
+		4A0B9FEDDD24DDB002355F37 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = src/messages.c;
+			sourceTree = "<group>";
+		};
+		501A520E08B0B229CB5B1807 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = BlockDevice.swift;
+			sourceTree = "<group>";
+		};
+		55E12A2032BC9B82C0636F8E = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = BtrfsFSExtension.swift;
+			sourceTree = "<group>";
+		};
+		5B9C55ADDE0288A1DE213192 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = vendor/zstd/common/debug.c;
+			sourceTree = "<group>";
+		};
+		61B3E3BD415793D614D358F4 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = src/super.h;
+			sourceTree = "<group>";
+		};
+		67241190B9C88CD27AF548C7 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = src/super.c;
+			sourceTree = "<group>";
+		};
+		689F6FECC3DCB2CABE265924 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = src/blake2b.c;
+			sourceTree = "<group>";
+		};
+		6B563F4F835BBDD7DEA0AD9C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = vendor/zstd/common/error_private.c;
+			sourceTree = "<group>";
+		};
+		76587B1CDD88049217698541 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = src/ondisk_format.h;
+			sourceTree = "<group>";
+		};
+		860836FBC47D71DE16D80DD9 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = src/ctree.h;
+			sourceTree = "<group>";
+		};
+		8A44BF53BA952B727B035E2A = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = src/messages.h;
+			sourceTree = "<group>";
+		};
+		8D48369F79B137A719DE2D20 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = vendor/zstd/common/xxhash.c;
+			sourceTree = "<group>";
+		};
+		91BA4CE503FC7DD932992907 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = src/volumes.h;
+			sourceTree = "<group>";
+		};
+		94C690A1DAA73F917974C85C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = src/crc32c.c;
+			sourceTree = "<group>";
+		};
+		9B9BCFDE5962345E1108274D = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = BtrfsVolume.swift;
+			sourceTree = "<group>";
+		};
+		9ECD6A4768902D1F6379EC23 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = src/api.c;
+			sourceTree = "<group>";
+		};
+		9FFF5C2A68A0B5E75CB86669 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = src/list.h;
+			sourceTree = "<group>";
+		};
+		A2548DA44AFB3467E905024C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = src/accessors.h;
+			sourceTree = "<group>";
+		};
+		AB99A374A802EA8CB541DD20 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = src/lzo.c;
+			sourceTree = "<group>";
+		};
+		B03750159F60E6B8E907A36E = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = src/hash.h;
+			sourceTree = "<group>";
+		};
+		B3E27A53FC687EE6EB5DC213 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = src/metadata.h;
+			sourceTree = "<group>";
+		};
+		B6B00D876CC1E130682F583E = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = "BtrfsFS-Bridging-Header.h";
+			sourceTree = "<group>";
+		};
+		BCD36FA0EF44CBDEA74DCB16 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = vendor/zstd/common/fse_decompress.c;
+			sourceTree = "<group>";
+		};
+		BDC2C6E26B3A956CA3B81F07 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = vendor/zstd/decompress/zstd_decompress_block.c;
+			sourceTree = "<group>";
+		};
+		C846A9D32869F590D9009ABE = {
+			isa = PBXFileReference;
+			explicitFileType = "wrapper.extensionkit-extension";
+			includeInIndex = 0;
+			path = BtrfsFS.appex;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD6D40823A80476203F1CE7C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = src/compression.h;
+			sourceTree = "<group>";
+		};
+		D2991581AAE62D950A1D5F30 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = include/btrfsro.h;
+			sourceTree = "<group>";
+		};
+		D33FA5E306375575E5E13565 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.entitlements;
+			path = BtrfsMac.entitlements;
+			sourceTree = "<group>";
+		};
+		D4CF4B35A25D398A392A8526 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = src/compat.h;
+			sourceTree = "<group>";
+		};
+		DC7159ECC8D4228A5745BF38 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.entitlements;
+			path = BtrfsFS.entitlements;
+			sourceTree = "<group>";
+		};
+		DE262F5330CDF2834186E4C6 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = src/blake2b.h;
+			sourceTree = "<group>";
+		};
+		E320ADE7BEF1422E388CBF48 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = src/metadata.c;
+			sourceTree = "<group>";
+		};
+		E977F75B2212064CFEFBE53D = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = src/inode.h;
+			sourceTree = "<group>";
+		};
+		EA76788EA37F6B831688DBC2 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = src/lzo.h;
+			sourceTree = "<group>";
+		};
+		ECE7FFE71A78EC9C5CF467E3 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = src/compression.c;
+			sourceTree = "<group>";
+		};
+		F022D12F520C5E970F3A59D9 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = vendor/zstd/decompress/zstd_ddict.c;
+			sourceTree = "<group>";
+		};
+		F27FC4240852B2E2D3F4D584 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = src/crc32c.h;
+			sourceTree = "<group>";
+		};
+		F85DDD127E91CDC449F6CC9A = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = src/accessors.c;
+			sourceTree = "<group>";
+		};
+		F91288DB192297DC903FE08C = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = BtrfsMac.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FC214A442E5A86154C6AC35E = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
+		FD15FA72B158CFA8B27F1B67 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = src/data.h;
+			sourceTree = "<group>";
+		};
+		FD60962B302E4BF3AD0B29A2 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = vendor/zstd/common/zstd_common.c;
+			sourceTree = "<group>";
+		};
+		FDDD063A15975F4E9E3CE3DE = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = src/inode.c;
+			sourceTree = "<group>";
+		};
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF0489BCA64AC3C0D96CBFB5 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4C478C5AC9A0A73E7EB2E80 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AC8BA37DAC32D5437812408 = {
+			isa = PBXGroup;
+			children = (
+				F91288DB192297DC903FE08C,
+				C846A9D32869F590D9009ABE,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AAA3943EC664003D4E5B097 = {
+			isa = PBXGroup;
+			children = (
+				501A520E08B0B229CB5B1807,
+				55E12A2032BC9B82C0636F8E,
+				2937FC743ED63C3D5E28EB2A,
+				9B9BCFDE5962345E1108274D,
+				FC214A442E5A86154C6AC35E,
+				DC7159ECC8D4228A5745BF38,
+				B6B00D876CC1E130682F583E,
+			);
+			path = BtrfsFS;
+			sourceTree = "<group>";
+		};
+		4EAE695AD1F489F78EA3E1C6 = {
+			isa = PBXGroup;
+			children = (
+				A3EB2B95F81CD676C24DCC97,
+				4AAA3943EC664003D4E5B097,
+				8BE379243AFC01664FA303D1,
+				2AC8BA37DAC32D5437812408,
+			);
+			sourceTree = "<group>";
+		};
+		8BE379243AFC01664FA303D1 = {
+			isa = PBXGroup;
+			children = (
+				A2548DA44AFB3467E905024C,
+				DE262F5330CDF2834186E4C6,
+				D4CF4B35A25D398A392A8526,
+				CD6D40823A80476203F1CE7C,
+				F27FC4240852B2E2D3F4D584,
+				860836FBC47D71DE16D80DD9,
+				FD15FA72B158CFA8B27F1B67,
+				B03750159F60E6B8E907A36E,
+				E977F75B2212064CFEFBE53D,
+				9FFF5C2A68A0B5E75CB86669,
+				EA76788EA37F6B831688DBC2,
+				8A44BF53BA952B727B035E2A,
+				B3E27A53FC687EE6EB5DC213,
+				76587B1CDD88049217698541,
+				61B3E3BD415793D614D358F4,
+				91BA4CE503FC7DD932992907,
+				D2991581AAE62D950A1D5F30,
+				F85DDD127E91CDC449F6CC9A,
+				9ECD6A4768902D1F6379EC23,
+				689F6FECC3DCB2CABE265924,
+				ECE7FFE71A78EC9C5CF467E3,
+				94C690A1DAA73F917974C85C,
+				07479B1E1B4789C1BFDB20DC,
+				268D3151D04A0695471FF8B1,
+				FDDD063A15975F4E9E3CE3DE,
+				AB99A374A802EA8CB541DD20,
+				4A0B9FEDDD24DDB002355F37,
+				E320ADE7BEF1422E388CBF48,
+				67241190B9C88CD27AF548C7,
+				05FEC09649C620C921D34B94,
+				5B9C55ADDE0288A1DE213192,
+				11392CE380CD22D524E507D5,
+				6B563F4F835BBDD7DEA0AD9C,
+				BCD36FA0EF44CBDEA74DCB16,
+				8D48369F79B137A719DE2D20,
+				FD60962B302E4BF3AD0B29A2,
+				38A5085057140368DF166CE1,
+				F022D12F520C5E970F3A59D9,
+				3C428C99C1CB625DC3EA9037,
+				BDC2C6E26B3A956CA3B81F07,
+			);
+			name = libbtrfsro;
+			path = ../core;
+			sourceTree = "<group>";
+		};
+		A3EB2B95F81CD676C24DCC97 = {
+			isa = PBXGroup;
+			children = (
+				1B64800641A9512FCBF14A47,
+				D33FA5E306375575E5E13565,
+			);
+			path = BtrfsMac;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DC61D677659CB93EE502EBC = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F196B339A726FAF5BDE22DD5;
+			buildPhases = (
+				4685E8B8D0D77E7DE5A8F53B,
+				F4C478C5AC9A0A73E7EB2E80,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BtrfsFS;
+			productName = BtrfsFS;
+			productReference = C846A9D32869F590D9009ABE;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
+		ACC9652797AB670E77D9DAEA = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ED00BBC0099E0D70106FB20;
+			buildPhases = (
+				E619FD91F7807FBFE25AE60E,
+				AF0489BCA64AC3C0D96CBFB5,
+				3769550BEC446D779F5C3557,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAEDFC77E30439AB033F06E1,
+			);
+			name = BtrfsMac;
+			productName = BtrfsMac;
+			productReference = F91288DB192297DC903FE08C;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					ACC9652797AB670E77D9DAEA = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					5DC61D677659CB93EE502EBC = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = B61A476A5531CC175278BDCF;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4EAE695AD1F489F78EA3E1C6;
+			productRefGroup = 2AC8BA37DAC32D5437812408;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACC9652797AB670E77D9DAEA,
+				5DC61D677659CB93EE502EBC,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4685E8B8D0D77E7DE5A8F53B = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17EBE1BB34F7FA690BD64802,
+				4D37457595B1A55F6B725E1C,
+				FD507F13B2012ADFCE5F5319,
+				476C51F189E72505D3CA8B88,
+				F9B22DDE068E05865796F6B1,
+				74FCE1BF762D47A880C946D0,
+				2CAC04B98AD3CD55D3864CF4,
+				0171374F42F3B1C557DFA0AF,
+				63B9F678836888261D832B84,
+				DDB42847CCA57B461C5ED7FB,
+				2960104993A9969A5DC57CD2,
+				D4737510CAA550011A075E54,
+				BDB257FA0F537A3DF005F823,
+				10F75608E0E0B3A5B49B7BAA,
+				2FB65DA69ECD46A4E2CA10BA,
+				8A33481272AEEABB272F0433,
+				999421B759FFF3212CB7B263,
+				049ECA1A721814E61E338F67,
+				FB65AF3DD272295E14BF98E8,
+				507B5827259EFE24538C4896,
+				5788347EB65F71B79F88CE34,
+				57C48CDF129F4EA20D9CF8FB,
+				47DD755CE94FD70199694636,
+				C8797038B63201E7BF495B27,
+				341082EC4D65C31B7D18C9E5,
+				51270710634147170C4DFD1C,
+				6D65BE0F0240D1153FA97154,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E619FD91F7807FBFE25AE60E = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D110D7F2286E8968829CC7EA,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAEDFC77E30439AB033F06E1 = {
+			isa = PBXTargetDependency;
+			target = 5DC61D677659CB93EE502EBC;
+			targetProxy = 6DE1494D6B9BC63E3D72F64D;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08723DE70035A45CE7E33CC1 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 0.1;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		31F573C1C1732BCE6B7B4EEB = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_ENTITLEMENTS = BtrfsMac/BtrfsMac.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "btrfs for macOS";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "MIT License";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.gereoffy.btrfs4mac;
+				PRODUCT_NAME = BtrfsMac;
+			};
+			name = Release;
+		};
+		61A8FE553262CD7EB776D383 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BtrfsFS/BtrfsFS.entitlements;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"_FILE_OFFSET_BITS=64",
+					ZSTD_DISABLE_ASM,
+					"ZSTD_LEGACY_SUPPORT=0",
+					"DEBUGLEVEL=0",
+				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../core/include",
+				);
+				INFOPLIST_FILE = BtrfsFS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.gereoffy.btrfs4mac.fsmodule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BtrfsFS/BtrfsFS-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		7C80754A03446383EF99BF62 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BtrfsFS/BtrfsFS.entitlements;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"_FILE_OFFSET_BITS=64",
+					ZSTD_DISABLE_ASM,
+					"ZSTD_LEGACY_SUPPORT=0",
+					"DEBUGLEVEL=0",
+				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../core/include",
+				);
+				INFOPLIST_FILE = BtrfsFS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lz",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.gereoffy.btrfs4mac.fsmodule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BtrfsFS/BtrfsFS-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		80DB6ACE13380ADC3D86D6C5 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 0.1;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98E398162C206F89866DBAA5 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CODE_SIGN_ENTITLEMENTS = BtrfsMac/BtrfsMac.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "btrfs for macOS";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "MIT License";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.gereoffy.btrfs4mac;
+				PRODUCT_NAME = BtrfsMac;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ED00BBC0099E0D70106FB20 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98E398162C206F89866DBAA5,
+				31F573C1C1732BCE6B7B4EEB,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B61A476A5531CC175278BDCF = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80DB6ACE13380ADC3D86D6C5,
+				08723DE70035A45CE7E33CC1,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F196B339A726FAF5BDE22DD5 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61A8FE553262CD7EB776D383,
+				7C80754A03446383EF99BF62,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595;
+}

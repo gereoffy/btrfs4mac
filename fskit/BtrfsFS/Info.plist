@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>btrfs</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>EXAppExtensionAttributes</key>
+	<dict>
+		<key>EXExtensionPointIdentifier</key>
+		<string>com.apple.fskit.fsmodule</string>
+		<key>FSActivateOptionSyntax</key>
+		<dict>
+			<key>shortOptions</key>
+			<string>o:</string>
+		</dict>
+		<key>FSShortName</key>
+		<string>btrfs</string>
+		<key>FSSupportsBlockResources</key>
+		<true/>
+		<key>FSPersonalities</key>
+		<dict>
+			<key>btrfs</key>
+			<dict>
+				<key>FSName</key>
+				<string>btrfs</string>
+			</dict>
+		</dict>
+		<key>FSMediaTypes</key>
+		<dict>
+			<key>0FC63DAF-8483-4772-8E79-3D69D8477DE4</key>
+			<dict>
+				<key>FSMediaProperties</key>
+				<dict>
+					<key>Content Hint</key>
+					<string>0FC63DAF-8483-4772-8E79-3D69D8477DE4</string>
+					<key>Leaf</key>
+					<true/>
+				</dict>
+				<key>FSProbeOrder</key>
+				<integer>2000</integer>
+			</dict>
+			<key>Linux</key>
+			<dict>
+				<key>FSMediaProperties</key>
+				<dict>
+					<key>Content Hint</key>
+					<string>Linux</string>
+					<key>Leaf</key>
+					<true/>
+				</dict>
+				<key>FSProbeOrder</key>
+				<integer>2000</integer>
+			</dict>
+			<key>Partitionless</key>
+			<dict>
+				<key>FSMediaProperties</key>
+				<dict>
+					<key>Leaf</key>
+					<true/>
+					<key>Whole</key>
+					<true/>
+				</dict>
+				<key>FSProbeOrder</key>
+				<integer>4000</integer>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
