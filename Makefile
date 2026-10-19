@@ -3,6 +3,7 @@
 #   make            build build/libbtrfsro.a and build/btrfsro
 #   make test       run the test scripts against the images in teszt-*/
 #   make fuzz       build the sanitizer-instrumented corruption fuzzer
+#   make mount      build build/btrfsro-fuse (needs macFUSE, or libfuse 2)
 #   make install    install library, header and pkg-config file
 #                   (PREFIX=/usr/local, DESTDIR= for staging)
 #   make clean
@@ -45,6 +46,16 @@ $(LIB): $(CORE_OBJ) $(ZSTD_OBJ)
 
 $(TOOL): $(BUILD)/tools/btrfsro.o $(LIB)
 	$(CC) $(CFLAGS) $^ $(LDLIBS) -o $@
+
+# FUSE frontend; macFUSE installs its fuse.pc in /usr/local/lib/pkgconfig
+FUSE_PKG   := PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:$$PKG_CONFIG_PATH pkg-config fuse
+FUSE_MOUNT := $(BUILD)/btrfsro-fuse
+
+mount: $(FUSE_MOUNT)
+
+$(FUSE_MOUNT): fuse/btrfsro-fuse.c $(LIB)
+	$(CC) $(CPPFLAGS) $(CFLAGS) $$($(FUSE_PKG) --cflags) $< $(LIB) \
+		$$($(FUSE_PKG) --libs) $(LDLIBS) -o $@
 
 HASHTEST := $(BUILD)/hash-vectors
 
@@ -94,4 +105,4 @@ install: $(LIB) $(TOOL) $(BUILD)/btrfsro.pc
 	install -m 644 $(BUILD)/btrfsro.pc $(DESTDIR)$(LIBDIR)/pkgconfig/
 	install -m 755 $(TOOL) $(DESTDIR)$(PREFIX)/bin/
 
-.PHONY: all test fuzz install clean
+.PHONY: all test fuzz mount install clean

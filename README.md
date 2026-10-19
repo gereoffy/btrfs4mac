@@ -11,6 +11,7 @@ library that reads btrfs and a command line tool built on it.
 | `libbtrfsro` C library | working, tested on the sample images |
 | `btrfsro` command line tool | working |
 | FSKit extension (`fskit/`) | working on macOS 15.7 (see notes below) |
+| macFUSE frontend (`fuse/`) | working |
 
 ## Scope
 
@@ -63,6 +64,23 @@ Installing the library for other programs (static library, header and a
 The Midnight Commander fork at https://github.com/gereoffy/mc (branch
 `vfs-btrfs`) uses it for a read-only `ubtrfs://` VFS, configured with
 `--enable-vfs-btrfs`.
+
+## Mounting with macFUSE
+
+Without a paid developer team for the FSKit module, a btrfs image or disk
+can be mounted read-only through [macFUSE](https://macfuse.github.io)
+(also libfuse 2 on Linux):
+
+    make mount                                   # builds build/btrfsro-fuse
+    mkdir -p /tmp/btrfs
+    build/btrfsro-fuse image.img /tmp/btrfs      # or a disk: /dev/diskN (sudo)
+    umount /tmp/btrfs
+
+Options are passed with `-o`: `defer_permissions` ignores the Linux owners
+and permissions (otherwise files of other users are not readable),
+`allow_other`, `uid=`, `gid=`, `volname=`, and `-f` keeps it in the
+foreground. Symlink targets longer than 1023 bytes are truncated (a macOS
+limit).
 
 ## Library API
 
