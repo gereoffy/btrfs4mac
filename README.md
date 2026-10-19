@@ -83,6 +83,9 @@ signed on one Mac and installed on another:
     TEAM_ID=ABCDE12345 NOTARY_PROFILE=notary fskit/build.sh   # on the signing Mac
     fskit/install.sh BtrfsMac.zip                              # on the target Mac
 
+Step by step instructions for building and signing from a fresh clone:
+[BUILD-fskit.md](BUILD-fskit.md).
+
 `fskit/build.sh` writes `fskit/dist/BtrfsMac.app` and `BtrfsMac.zip`. The
 FSKit entitlement needs a provisioning profile, i.e. a paid Apple Developer
 Program team that Xcode is signed in to; certificates and profiles are
