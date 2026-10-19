@@ -87,7 +87,7 @@ def main():
     ext_misc = [ref_in("BtrfsFS", n) for n in ("Info.plist", "BtrfsFS.entitlements",
                                                "BtrfsFS-Bridging-Header.h")]
     app_refs = [ref_in("BtrfsMac", os.path.basename(p)) for p in app_swift]
-    app_misc = [ref_in("BtrfsMac", "BtrfsMac.entitlements")]
+    app_misc = [ref_in("BtrfsMac", n) for n in ("Info.plist", "BtrfsMac.entitlements")]
     core_c_refs = [ref_in("core", rel(p, core_dir)) for p in core_c + zstd_c]
     core_h_refs = [ref_in("core", rel(p, core_dir)) for p in core_h] + \
                   [ref_in("core", "include/btrfsro.h")]
@@ -189,10 +189,8 @@ def main():
         "ASSETCATALOG_COMPILER_APPICON_NAME": "",
         "CODE_SIGN_ENTITLEMENTS": "BtrfsMac/BtrfsMac.entitlements",
         "COMBINE_HIDPI_IMAGES": "YES",
-        "GENERATE_INFOPLIST_FILE": "YES",
-        "INFOPLIST_KEY_CFBundleDisplayName": "btrfs for macOS",
-        "INFOPLIST_KEY_LSApplicationCategoryType": "public.app-category.utilities",
-        "INFOPLIST_KEY_NSHumanReadableCopyright": "MIT License",
+        "GENERATE_INFOPLIST_FILE": "NO",
+        "INFOPLIST_FILE": "BtrfsMac/Info.plist",
         "LD_RUNPATH_SEARCH_PATHS": ["$(inherited)", "@executable_path/../Frameworks"],
         "PRODUCT_BUNDLE_IDENTIFIER": BUNDLE_ID,
         "PRODUCT_NAME": "BtrfsMac",

@@ -112,6 +112,10 @@
 			isa = PBXBuildFile;
 			fileRef = FDDD063A15975F4E9E3CE3DE;
 		};
+		DAC155DBF87CABA92737C796 = {
+			isa = PBXBuildFile;
+			fileRef = 420DD26B0F2EE940BEFED087;
+		};
 		DDB42847CCA57B461C5ED7FB = {
 			isa = PBXBuildFile;
 			fileRef = 07479B1E1B4789C1BFDB20DC;
@@ -195,6 +199,12 @@
 			path = BtrfsFileSystem.swift;
 			sourceTree = "<group>";
 		};
+		323248FE5F9583CFADC42240 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
 		38A5085057140368DF166CE1 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.c.c;
@@ -205,6 +215,12 @@
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.c.c;
 			path = vendor/zstd/decompress/zstd_decompress.c;
+			sourceTree = "<group>";
+		};
+		420DD26B0F2EE940BEFED087 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = DiskManager.swift;
 			sourceTree = "<group>";
 		};
 		4A0B9FEDDD24DDB002355F37 = {
@@ -586,6 +602,8 @@
 			isa = PBXGroup;
 			children = (
 				1B64800641A9512FCBF14A47,
+				420DD26B0F2EE940BEFED087,
+				323248FE5F9583CFADC42240,
 				D33FA5E306375575E5E13565,
 			);
 			path = BtrfsMac;
@@ -706,6 +724,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D110D7F2286E8968829CC7EA,
+				DAC155DBF87CABA92737C796,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -747,10 +766,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CODE_SIGN_ENTITLEMENTS = BtrfsMac/BtrfsMac.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "btrfs for macOS";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "MIT License";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BtrfsMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -856,10 +873,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CODE_SIGN_ENTITLEMENTS = BtrfsMac/BtrfsMac.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "btrfs for macOS";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "MIT License";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BtrfsMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

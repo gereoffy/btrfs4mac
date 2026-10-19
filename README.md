@@ -126,6 +126,12 @@ and attached images are then mounted automatically (read-only):
     hdiutil attach -readonly -imagekey diskimage-class=CRawDiskImage image.img
     umount /Volumes/btrfs
 
+The app does the same without Terminal: "Mount Image…", dropping an image
+on its window or Finder's "Open With" attach an image; it lists the mounted
+btrfs volumes (Open in Finder, Eject) and unmounted Linux partitions
+(Mount), and opens the extension settings. The module itself does not need
+the app to run.
+
 Notes from getting it running (macOS 15.7, Intel):
 
 * The FSKit entitlement needs a provisioning profile, which personal (free)
