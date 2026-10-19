@@ -1,5 +1,6 @@
 # Build output
 build/
+fskit/dist/
 
 # Test images and their reference manifests (large, made locally or on Linux)
 teszt-*/

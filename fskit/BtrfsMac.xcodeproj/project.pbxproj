@@ -116,6 +116,10 @@
 			isa = PBXBuildFile;
 			fileRef = 07479B1E1B4789C1BFDB20DC;
 		};
+		EB78AAF8C0E9531041B806C9 = {
+			isa = PBXBuildFile;
+			fileRef = DDD2D18926FA768D94B60EFF;
+		};
 		F9B22DDE068E05865796F6B1 = {
 			isa = PBXBuildFile;
 			fileRef = F85DDD127E91CDC449F6CC9A;
@@ -213,6 +217,12 @@
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.swift;
 			path = BlockDevice.swift;
+			sourceTree = "<group>";
+		};
+		5463692A99E3B0065B2B3569 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = src/sha256.h;
 			sourceTree = "<group>";
 		};
 		55E12A2032BC9B82C0636F8E = {
@@ -384,6 +394,12 @@
 			path = BtrfsFS.entitlements;
 			sourceTree = "<group>";
 		};
+		DDD2D18926FA768D94B60EFF = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.c;
+			path = src/sha256.c;
+			sourceTree = "<group>";
+		};
 		DE262F5330CDF2834186E4C6 = {
 			isa = PBXFileReference;
 			lastKnownFileType = sourcecode.c.h;
@@ -533,6 +549,7 @@
 				8A44BF53BA952B727B035E2A,
 				B3E27A53FC687EE6EB5DC213,
 				76587B1CDD88049217698541,
+				5463692A99E3B0065B2B3569,
 				61B3E3BD415793D614D358F4,
 				91BA4CE503FC7DD932992907,
 				D2991581AAE62D950A1D5F30,
@@ -547,6 +564,7 @@
 				AB99A374A802EA8CB541DD20,
 				4A0B9FEDDD24DDB002355F37,
 				E320ADE7BEF1422E388CBF48,
+				DDD2D18926FA768D94B60EFF,
 				67241190B9C88CD27AF548C7,
 				05FEC09649C620C921D34B94,
 				5B9C55ADDE0288A1DE213192,
@@ -667,6 +685,7 @@
 				BDB257FA0F537A3DF005F823,
 				10F75608E0E0B3A5B49B7BAA,
 				2FB65DA69ECD46A4E2CA10BA,
+				EB78AAF8C0E9531041B806C9,
 				8A33481272AEEABB272F0433,
 				999421B759FFF3212CB7B263,
 				049ECA1A721814E61E338F67,
