@@ -43,7 +43,8 @@ else
 fi
 
 rm -rf "$DIST"
-mkdir -p "$DIST"
+# build/ is not in git; ExportOptions.plist is written there before xcodebuild
+mkdir -p "$DIST" build
 
 export_archive() { # <export method>
 	local options=build/ExportOptions.plist
