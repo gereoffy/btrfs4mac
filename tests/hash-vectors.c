@@ -34,6 +34,10 @@ int main(void)
 	/* BLAKE2b-256("abc") */
 	fails += check("blake2b", BTRFS_CSUM_TYPE_BLAKE2, "abc", 32,
 		       "bddd813c634239723171ef3fee98579b94964e3bb1cb3e427262c8c068d52319");
+	/* Two padding blocks for sha256 (56 bytes) */
+	fails += check("sha256", BTRFS_CSUM_TYPE_SHA256,
+		       "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq",
+		       32, "248d6a61d20638b8e5c026930c3e6039a33ce45964ff2167f6ecedd419db06c1");
 	/* Multi-block input for blake2b: 200 x 'a' */
 	{
 		char msg[201];

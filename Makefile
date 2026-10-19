@@ -3,12 +3,14 @@
 #   make            build build/libbtrfsro.a and build/btrfsro
 #   make test       run the test scripts against the images in teszt-*/
 #   make fuzz       build the sanitizer-instrumented corruption fuzzer
+#   make install    install library, header and pkg-config file
+#                   (PREFIX=/usr/local, DESTDIR= for staging)
 #   make clean
 
 CC      ?= clang
 ARCHS   ?=
 CFLAGS  ?= -O2 -g
-CFLAGS  += -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-sign-compare \
+CFLAGS  += -fPIC -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-sign-compare \
            -Wno-missing-field-initializers $(ARCHS)
 CPPFLAGS += -Icore/include -D_FILE_OFFSET_BITS=64
 ZSTD_CPPFLAGS = -DZSTD_DISABLE_ASM -DZSTD_LEGACY_SUPPORT=0 -DDEBUGLEVEL=0 \
@@ -67,4 +69,29 @@ $(FUZZ): tests/fuzz.c $(CORE_SRC) $(ZSTD_SRC) $(wildcard core/src/*.h) core/incl
 clean:
 	rm -rf $(BUILD)
 
-.PHONY: all test fuzz clean
+PREFIX  ?= /usr/local
+LIBDIR  ?= $(PREFIX)/lib
+INCDIR  ?= $(PREFIX)/include
+VERSION := 0.1
+
+$(BUILD)/btrfsro.pc: Makefile
+	@mkdir -p $(BUILD)
+	printf '%s\n' \
+		'prefix=$(PREFIX)' \
+		'libdir=$(LIBDIR)' \
+		'includedir=$(INCDIR)' \
+		'' \
+		'Name: btrfsro' \
+		'Description: Read-only btrfs access library' \
+		'Version: $(VERSION)' \
+		'Libs: -L$${libdir} -lbtrfsro -lz -lpthread' \
+		'Cflags: -I$${includedir}' > $@
+
+install: $(LIB) $(TOOL) $(BUILD)/btrfsro.pc
+	install -d $(DESTDIR)$(LIBDIR)/pkgconfig $(DESTDIR)$(INCDIR) $(DESTDIR)$(PREFIX)/bin
+	install -m 644 $(LIB) $(DESTDIR)$(LIBDIR)/
+	install -m 644 core/include/btrfsro.h $(DESTDIR)$(INCDIR)/
+	install -m 644 $(BUILD)/btrfsro.pc $(DESTDIR)$(LIBDIR)/pkgconfig/
+	install -m 755 $(TOOL) $(DESTDIR)$(PREFIX)/bin/
+
+.PHONY: all test fuzz install clean

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
 
-#include <CommonCrypto/CommonDigest.h>
 #include "ondisk_format.h"
 #include "messages.h"
 #include "crc32c.h"
 #include "blake2b.h"
+#include "sha256.h"
 #include "hash.h"
 
 /* xxHash comes from the vendored zstd copy, which namespaces it with ZSTD_ */
@@ -32,7 +32,7 @@ static int hash_xxhash(const u8* buf, size_t length, u8 *out)
 
 static int hash_sha256(const u8* buf, size_t length, u8 *out)
 {
-	CC_SHA256(buf, (CC_LONG)length, out);
+	sha256(buf, length, out);
 	return 0;
 }
 

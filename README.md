@@ -55,6 +55,15 @@ Xcode command line tools are enough:
 `<image>` can be an image file or a disk device (`/dev/rdiskNsM`, needs
 read permission, e.g. via sudo).
 
+Installing the library for other programs (static library, header and a
+`btrfsro.pc` pkg-config file):
+
+    make install PREFIX=/usr/local
+
+The Midnight Commander fork at https://github.com/gereoffy/mc (branch
+`vfs-btrfs`) uses it for a read-only `ubtrfs://` VFS, configured with
+`--enable-vfs-btrfs`.
+
 ## Library API
 
 See [core/include/btrfsro.h](core/include/btrfsro.h). The library does no
